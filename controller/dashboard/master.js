@@ -1,12 +1,21 @@
 const bcrypt = require("bcrypt");
 const Admin = require("../../models/adminModel");
 
-const dashboardMaster = (req, res) => {
-    const session = req.session.admin
-    const username = session ? session.username : null
-    res.render('dashboard-master', {
-        username: username
-    })
+const dashboardMaster = async (req, res) => {
+    try {
+        const session = req.session.admin;
+        const username = session ? session.username : null;
+
+        const readAdmin = await Admin.find({ role: 'admin' });
+        console.log(readAdmin)
+        res.render('dashboard-master', {
+            username: username,
+            data : readAdmin
+        });
+    } catch (err) {
+        console.error(err);
+        res.status(500).send('Internal Server Error');
+    }
 }
 
 const adminRegister = async (req, res) => {
@@ -46,13 +55,5 @@ const adminRegister = async (req, res) => {
         res.redirect('/register'); // Redirect to registration page or appropriate page
     }
 }
-const readAdmin = async (req, res) => {
-    const readAdmin = await Admin.find({ role: 'admin' })
 
-    res.render('table', {
-        via: readAdmin.via,
-        id: readAdmin._id
-    })
-}
-
-module.exports = { dashboardMaster, adminRegister, readAdmin }
+module.exports = { dashboardMaster, adminRegister }

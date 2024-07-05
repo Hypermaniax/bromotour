@@ -21,7 +21,10 @@ const adminSchema = new mongoose.Schema({
     },
     refresh_token: {
         type: String
-    }
+    },via:{
+        type:String,
+        require:false
+    },
 }, {
     timestamps: true,
 });
