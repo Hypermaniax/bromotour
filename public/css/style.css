@@ -1,0 +1,1096 @@
+* {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Root Start */
+:root {
+  --fontnavbar: rgb(233, 154, 19);
+  --bgheadertop: black;
+  --bgbody-font: white;
+  --card: #e7e9eb;
+  --color1: #88888b;
+  --color2: #d6d6d6;
+  --color3: #3c323b;
+  --color4: #fff;
+  --color-biru1: #ff7a00;
+  --color-biru2: #ff7a00;
+  --color-biru3: #f7f3f7;
+}
+/* Root End */
+
+@font-face {
+  font-family: "redressedregular";
+  src: url("/font/Redressed-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* body Start */
+body {
+  background-color: #f2ece6;
+}
+
+/* Body End */
+
+/* Navbar Start */
+.navbar-light .navbar-nav .nav-link.active {
+  color: #fff;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #fff;
+  margin-left: 30px;
+}
+
+.navbar-collapse ul li {
+  margin-right: 7px;
+}
+
+/* Ensure the username text and login button have white color */
+.navbar-text, .btn-primary {
+  margin-left: 50px;
+  margin-right: 10px;
+  margin-top: 2px;
+  color: #ffffff !important;
+}
+
+/* Additionally, if the .btn-primary has background color, make sure to override it if needed */
+.btn-primary {
+  background-color: transparent;
+  border-color: #ffffff; /* Optional: add a border color for better visibility */
+}
+
+.btn-primary:hover {
+  background-color: #ff7a00;
+}
+
+/* Navbar End */
+
+/* Navbar Start */
+.collapse {
+  flex-grow: 0;
+  font-size: 18px;
+}
+
+/* Navbar End */
+
+/* About-Area Start*/
+.about-area {
+  padding: 120px 0;
+}
+
+.about-area .container .align {
+  align-items: center;
+}
+
+.about-area .container .col-lg-6 img {
+  max-width: 100%;
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.5);
+}
+
+.about-area .container .col-lg-6 .about-right {
+  padding: 15px;
+  line-height: 3em;
+  font-family: "Open Sans";
+}
+
+.about-area .container .col-lg-6 .about-right .side-title {
+  font-weight: bolder;
+  text-transform: capitalize;
+  font-size: 70px;
+  font-family: "redressedregular";
+  font-weight: 700;
+  margin-bottom: 1em;
+}
+
+.about-area .container .col-lg-6 .about-right .desc {
+  font-size: 18px;
+  font-weight: 500px;
+}
+
+/* About-Area End*/
+
+/* jeep-area Start */
+.jeep-area {
+  background-color: #211f1f;
+  padding: 15px;
+}
+
+.jeep-area .headline {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.jeep-area .headline .title {
+  font-weight: bolder;
+  font-size: 60px;
+  font-family: "redressedregular";
+  color: var(--bgbody-font);
+}
+
+.jeep-area .headline {
+  font-family: "Open Sans", sans-serif;
+  font-style: italic;
+  color: var(--bgbody-font);
+  text-align: center;
+}
+
+.jeep-area .card {
+  padding: 15px;
+  margin-left: 25px;
+  margin-right: 25px;
+  border-radius: 10px;
+  font-family: "Open Sans";
+  font-size: 15px;
+  background-color: var(--bgbody-font);
+  color: var(--bgheadertop);
+}
+
+.jeep-area .card ul li i {
+  color: var(--bgheadertop);
+}
+
+.jeep-area .jeephead {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 15px;
+  line-height: 2em;
+  color: var(--bgheadertop);
+  font-weight: bolder;
+}
+
+.jeep-area .jeephead span {
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+}
+
+.jeep-area .headline h2 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 70px;
+  color: #fff;
+}
+
+.jeep-area h4 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+}
+
+.jeep-area h5 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+}
+
+li {
+  list-style: none;
+}
+
+.jeep-area .btn {
+  background-color: #ff7a00;
+  border-radius: 15px;
+  padding: 10px;
+  width: 60%;
+}
+
+.jeep-area .btn:hover {
+  color: black;
+}
+
+/* jeep-area End */
+
+/* Rent-Area Start */
+
+.rent-area {
+  background-color: #211f1f;
+  padding-top: 25px;
+}
+
+.rent-area .container .col-lg-9 {
+  background-image: linear-gradient(#090909b5, #0b0b0bd6),
+    url(/images/card1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  color: var(--bgbody-font);
+  line-height: 2em;
+  padding: 20px;
+}
+
+.rent-area .btn {
+  background-color: var(--color-biru2);
+  border-radius: 15px;
+  padding: 10px;
+  width: 30%;
+}
+
+.rent-area .btn:hover {
+  color: black;
+}
+
+/* Rent-Area End */
+
+/* Feature Area Start*/
+
+.feature-area {
+  box-sizing: border-box;
+  padding: 120px 0;
+  background-color: #8cb9bd;
+  background-image: linear-gradient(#090909b5, #0b0b0bd6),
+    url(/images/IMG_3135.jpg);
+  background-repeat: no-repeat;
+  /* Ensure image is displayed only once */
+  background-position: center;
+  /* Center the image horizontally */
+  background-size: cover;
+}
+
+.feature-icon img {
+  padding: 30px;
+  height: 180px;
+}
+
+.feature-item {
+  background-color: var(--bgbody-font);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.feature-area .feture-head {
+  color: var(--bgbody-font);
+}
+
+.content-hr {
+  color: var(--bgbody-font);
+  margin-top: 10px;
+}
+
+.feture-head img {
+  height: 70px;
+}
+
+.feature-body {
+  color: var(--bgbody-font);
+  margin-top: 10px;
+}
+
+/* Feature Area End*/
+
+/* Owl*/
+#owl-demo .item {
+  padding: 30px 0px;
+  margin: 10px;
+  color: #fff;
+  border-radius: 3px;
+  text-align: center;
+}
+
+#owl-demo .item img {
+  width: px;
+}
+
+#owl-demo button {
+  height: 40px;
+}
+
+/* Contact-Us Start */
+.contact-us-arrow {
+  padding-left: 200px;
+  padding-right: 200px;
+}
+
+.contact-us {
+  background-color: #ff7a00;
+  padding: 45px;
+}
+
+.contact-us .btn {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.contact-us {
+  color: var(--bgbody-font);
+}
+
+.contact-us .btn {
+  background-color: var(--bgbody-font);
+  border-radius: 15px;
+  padding: 10px;
+  width: 60%;
+  color: var(--color-biru1);
+}
+
+.contact-us h2 {
+  font-weight: bold;
+}
+
+/* Contact-Us End */
+
+/* footer Start */
+.footer-area {
+  color: var(--bgbody-font);
+  font-size: 17px;
+}
+
+.footer-area .footer-logo img {
+  height: 40px;
+}
+
+.footer-area .icon-footer {
+  padding-top: 15px;
+  display: flex;
+}
+
+.footer-area .icon-footer .left {
+  margin-left: 25px;
+}
+
+.footer-area .icon-block .icon {
+  margin-right: 25px;
+  margin-top: 10px;
+}
+
+.footer-area .title-footer h5 {
+  font-weight: bolder;
+  font-size: 30px;
+}
+
+/* footer end */
+
+body .tb {
+  border-radius: 15px;
+}
+.table > :not(:last-child) > :last-child > * {
+  border-bottom: none;
+}
+.logout {
+  display: flex;
+  flex: end;
+}
+/* register */
+.form-register {
+  display: none;
+  z-index: 1;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.form-register .container .card {
+  width: 700px;
+  box-shadow: 5px 5px 5px #a4a4a4, -5px 5px 5px #a4a4a4, 5px -5px 5px #a4a4a4,
+    -5px -5px 5px #a4a4a4;
+}
+
+.form-register .right span {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.form-register .card .mb-3 span {
+  cursor: pointer;
+}
+.form-register .card span:hover {
+  color: blue;
+}
+
+.form .card span {
+  cursor: pointer;
+}
+.form .card span:hover {
+  color: blue;
+}
+/* dashboar User */
+.dashboard .container .card {
+  border-radius: 15px;
+  box-shadow: 5px 5px 5px #a4a4a4, -5px 5px 5px #a4a4a4, 5px -5px 5px #a4a4a4,
+    -5px -5px 5px #a4a4a4;
+}
+.dashboard .container .card-header {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+.dashboard .container .card-header {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.dashboard .container .card-body {
+  padding: 15px;
+}
+
+/* Admin */
+.header-admin {
+  background-color: #ff7a00;
+  color: #fff;
+}
+.header-admin .logo .div span {
+  font-weight: bolder;
+  font-size: 18px;
+}
+.header-admin .collapse .kanan .logout-admin span {
+  font-weight: bolder;
+  font-size: 18px;
+}
+.dashboard-admin {
+  margin-top: 25px;
+}
+.dashboard-admin .container .card {
+  padding: 0 15px;
+  box-shadow: 2px 2px 2px #a4a4a4, -2px 2px 2px #a4a4a4, 2px -2px 2px #a4a4a4,
+    -2px -2px 2px #a4a4a4;
+}
+.dashboard-admin .card .add-edit button {
+  background-color: #ff7a00;
+  border-radius: 15px;
+  padding: 5px 25px;
+  font-size: 17px;
+  font-weight: bolder;
+  color: #fff;
+  border: none;
+  outline: none;
+}
+.dashboard-admin .card .rutedb ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+.dashboard-admin .card .rutedb ul li {
+  margin-left: 8px;
+}
+.logout-admin button {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+}
+
+/* dashbarod admin add */
+.dashboard-admin-add {
+  display: none;
+  z-index: 1;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.dashboard-admin-add .add {
+  padding: 25px;
+  background-color: #fff;
+  width: 400px;
+  box-shadow: 2px 2px 2px #a4a4a4, -2px 2px 2px #a4a4a4, 2px -2px 2px #a4a4a4,
+    -2px -2px 2px #a4a4a4;
+}
+.dashboard-admin-add form {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+/* dashbarod admin edit */
+.dashboard-admin-edit {
+  display: none;
+  z-index: 1;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.dashboard-admin-edit .edit {
+  padding: 25px;
+  background-color: #fff;
+  width: 400px;
+  box-shadow: 2px 2px 2px #a4a4a4, -2px 2px 2px #a4a4a4, 2px -2px 2px #a4a4a4,
+    -2px -2px 2px #a4a4a4;
+}
+.dashboard-admin-edit .right span {
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold; 
+  cursor: pointer;
+}
+.dashboard-admin-edit form {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.dashboard-admin-edit-add form {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.dashboard-admin-add .right span {
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* table admin */
+.table-remove .card {
+  border-radius: 15px;
+  box-shadow: 2px 2px 2px #a4a4a4, -2px 2px 2px #a4a4a4, 2px -2px 2px #a4a4a4,
+    -2px -2px 2px #a4a4a4;
+}
+.table-remove .card thead tr th {
+  background-color: #ff7a00;
+  color: #fff;
+}
+.table-remove table {
+  padding: 100px;
+}
+.table > :not(caption) > * > * {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+/* warning Master */
+.warning {
+  display: none;
+  z-index: 1;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.warning .card {
+  width: 400px;
+  border-radius: 15px;
+}
+.warning .card .warning-card {
+  margin-top: 15px;
+  background-color: #ff7a00;
+  color: #fff;
+  font-weight: bolder;
+  padding: 15px;
+  border-radius: 15px;
+}
+.warning .card .input button {
+  background-color: #ff0000;
+  color: #fff;
+  font-weight: bolder;
+  border: none;
+  width: 50%;
+  border-radius: 10px;
+  padding: 10px;
+}
+.warning .card .input {
+  gap: 15px;
+  margin-top: 15px;
+}
+.table-remove .input button {
+  background-color: #ff7a00;
+  color: #fff;
+  font-weight: bolder;
+  border: none;
+  width: 30%;
+  border-radius: 10px;
+  padding: 10px;
+}
+/* add Admin */
+.add-admin-via {
+  display: none;
+  z-index: 1;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.add-admin-via .card {
+  padding: 25px;
+  border-radius: 15px;
+  width: 500px;
+}
+.add-admin-via .card button {
+  width: 100%;
+  border: none;
+  background-color: #ff7a00;
+  color: #fff;
+  font-weight: bolder;
+  padding: 10px;
+  border-radius: 5px;
+}
+.add-admin-via .card .right span {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.add-admin-master {
+  display: none;
+  z-index: 1;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.add-admin-master .card {
+  padding: 25px;
+  border-radius: 15px;
+  width: 500px;
+}
+.add-admin-master .card button {
+  width: 100%;
+  border: none;
+  background-color: #ff7a00;
+  color: #fff;
+  font-weight: bolder;
+  padding: 10px;
+  border-radius: 5px;
+}
+.add-admin-master .card .right span {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.Choose{
+  display: none;
+  z-index: 1;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4)
+}
+.Choose .card{
+  width: 400px;
+  border-radius: 15px;
+}
+.Choose .card .input {
+  gap: 15px;
+  margin-top: 15px;
+}
+.Choose .card .choose{
+  margin-top: 15px;
+  background-color: #ff7a00;
+  color: #fff;
+  font-weight: bolder;
+  padding: 15px;
+  border-radius: 15px;
+}
+.Choose .card  .input button{
+  background-color: #ff7a00;
+  color: #fff;
+  font-weight: bolder;
+  border: none;
+  width: 50%;
+  border-radius: 10px;
+  padding: 10px;
+}
+/* new */
+
+/* dashboard User */
+.header-user .container .container-fluid .nav-link {
+  color: #000;
+  font-weight: bold;
+}
+/* order */
+.order .card {
+  border-radius: 15px;
+}
+.order .card .card-header {
+  background-color: #ff7a00;
+  font-weight: bolder;
+  font-size: 20px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom: none;
+}
+.waitforpayment button {
+  background-color: #ff7a00;
+  border: none;
+  width: 150px;
+  padding: 10px;
+  color: #fff;
+  font-weight: bolder;
+  border-radius: 15px;
+}
+.waitforpayment .card {
+  border-radius: 15px;
+}
+.waitforpayment .card .card-header {
+  background-color: #ff7a00;
+  font-weight: bolder;
+  font-size: 20px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom: none;
+}
+.payment{
+  display: none;
+  z-index: 1;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.payment button {
+  background-color: #ff7a00;
+  border: none;
+  width: 100%;
+  padding: 10px;
+  color: #fff;
+  font-weight: bolder;
+  border-radius: 15px;
+}
+.payment .card {
+  display: flex;
+  flex-direction: row;
+}
+.payment .card .left {
+  flex: 2;
+}
+.payment .card .right {
+  flex: 1;
+}
+
+.payment .card input {
+  width: 100%;
+  height: 45px;
+}
+.payment .logo span {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.Qris{
+  display: none;
+  display: none;
+  z-index: 4;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.Qris button {
+  background-color: #ff7a00;
+  border: none;
+  width: 40%;
+  padding: 10px;
+  color: #fff;
+  font-weight: bolder;
+  border-radius: 15px;
+}
+.order .success span{
+  cursor: pointer;
+}
+.invoice{
+  display: none;
+  z-index: 1;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.invoice .card {
+  border-radius: 15px;
+}
+.invoice .card .card-header {
+  background-color: #ff7a00;
+  font-weight: bolder;
+  font-size: 20px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom: none;
+}
+.invoice .kanan span {
+  position: absolute;
+  right: 25px;
+  top: 0px;
+  color: rgb(0, 0, 0);
+  font-size: 35px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.minip {
+  width: 300px;
+  height: 450px;
+  margin: auto;
+  background: #fff;
+  position: relative;
+  box-shadow: 0px 0px 5px var(--terracotta);
+}
+
+.minip .mg {
+  width: 100%;
+  height: 200px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  display: grid;
+  grid-template-columns: 250px 50px;
+  grid-template-rows: 100px 150px;
+  grid-template-areas:
+    "clr group"
+    "clr .....";
+  transition: grid-template-columns 0.3s linear, grid-template-rows 0.3s linear;
+}
+.minip:hover .mg {
+  grid-template-columns: 150px 150px;
+  grid-template-rows: 50px 300px;
+  transition: grid-template-columns 0.3s linear, grid-template-rows 0.3s linear;
+}
+.minip .mg .clr {
+  grid-area: clr;
+  background: #ffdfbe;
+}
+.minip .mg .group {
+  font: 10px/10px var(--mono);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  writing-mode: vertical-lr;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.minip .mg .group span {
+  display: block;
+  transform: rotate(180deg);
+  transition: transform 0.3s linear;
+}
+.minip:hover .mg .group span {
+  transform: rotate(270deg);
+  transition: transform 0.3s linear;
+}
+
+.minip .av {
+  width: 200px;
+  height: 350px;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  background: var(--green);
+  background-position: top center;
+  background-size: cover;
+  transition: width 0.3s linear, height 0.3s linear;
+}
+.minip:hover .av {
+  width: 250px;
+  height: 400px;
+  transition: width 0.3s linear, height 0.3s linear;
+}
+
+.minip .info {
+  width: 160px;
+  max-height: 100px;
+  padding: 25px;
+  position: absolute;
+  bottom: 100px;
+  left: 0px;
+  background: #ffa870;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-content: flex-start;
+  transition: bottom 0.3s linear;
+}
+.minip:hover .info {
+  bottom: 50px;
+  transition: bottom 0.3s linear;
+}
+.minip .info name {
+  display: block;
+  text-indent: -25px;
+  letter-spacing: 1px;
+  margin: 0px 0px 10px 25px;
+}
+.minip .info deets {
+  font: 10px/15px var(--mono);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.minip a.plot {
+  width: 110px;
+  height: 30px;
+  position: absolute;
+  bottom: 85px;
+  left: 85px;
+  background: var(--dgreen);
+  font: 10px/10px var(--mono);
+  text-transform: uppercase;
+  color: var(--white);
+  text-decoration: none;
+  letter-spacing: 1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: bottom 0.3s linear;
+}
+.minip:hover a.plot {
+  bottom: 35px;
+  transition: bottom 0.3s linear;
+}
+select{
+  width: 100%;
+  text-align-last:center;
+}
+.wrapper-admin-via{
+  display: none;
+}
+@media only screen and (max-width: 600px) {
+  .main {
+    margin-top: 0;
+  }
+
+  .headnav {
+    background-color: var(--color-biru1);
+  }
+
+  .feature-area {
+    margin-top: -80px;
+  }
+
+  .feature-area .col-md-6 {
+    margin-top: 10px;
+  }
+
+  .contact-us .left {
+    display: none;
+  }
+
+  .contact-us-arrow {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .footer-area .icon-footer {
+    padding-top: 15px;
+    display: block;
+  }
+  .footer-area .footer-logo img {
+    width: 150px;
+  }
+  .footer-area .icon-footer .left {
+    margin-left: 0px;
+  }
+  .payment .card .right img {
+    height: 50px;
+  }
+  .header-user img {
+    height: 30px;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .main {
+    margin-top: 0px;
+  }
+
+  .headnav {
+    background-color: var(--color-biru1);
+  }
+
+  .carosel .carousel-item p {
+    font-size: 12px;
+  }
+
+  .feature-area {
+    margin-top: -80px;
+  }
+
+  .feature-area .col-md-6 {
+    margin-top: 10px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .main {
+    margin-top: 0px;
+  }
+
+  .headnav {
+    background-color: var(--color-biru1);
+  }
+
+  .carousel-item .mt-5 {
+    margin-top: 1rem !important;
+    font-size: 18px;
+  }
+
+  .carousel-item p {
+    font-size: 12px;
+  }
+
+  .feature-area {
+    margin-top: -80px;
+  }
+
+  .feature-area .col-md-6 {
+    margin-top: 10px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .main {
+    margin-top: -66px;
+  }
+
+  .headnav {
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+
+  .carousel-item .mt-5 {
+    margin-top: 3rem !important;
+  }
+
+  .feature-area {
+    margin-top: -80px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .main {
+    margin-top: -66px;
+  }
+
+  .headnav {
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+
+  .carousel-item .mt-5 {
+    margin-top: 6rem !important;
+  }
+
+  .feature-area {
+    margin-top: -80px;
+  }
+}

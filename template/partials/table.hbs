@@ -1,0 +1,38 @@
+<div class="table-remove my-5">
+  <div class="container">
+    <div class="card">
+      <div class="card-body">
+        <img src="/images/logo2.png" alt="" height="35" class="my-3" />
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th scope="col">No</th>
+              <th scope="col" style="text-align: center;">Via</th>
+              <th scope="col" style="text-align: end;">delete</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              {{#each Admin}}
+              <th scope="row">1</th>
+              <td style="text-align: center;">{{this.via}}</td>
+              <td style="text-align: end; padding-right :2.3rem;"><button
+                  onclick="document.getElementById('warning').style.display='block'"
+                  type="button"
+                  style="border: none;"
+                  data-id="{{this.id}}"
+                ><i class='bx bxs-trash bx-sm' style="margin-right: px;"></i></button>
+              </td>
+              {{/each}}
+            </tr>
+          </tbody>
+        </table>
+        <div class="input text-end mt-4">
+          <button
+            onclick="document.getElementById('Choose').style.display='block'"
+          >Add Admin</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

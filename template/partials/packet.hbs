@@ -1,0 +1,37 @@
+<div class="row">
+  <div class="headline">
+    <span class="title">Our Packages</span>
+    <h6>“Explore the ultimate selection of our premium products and services,
+      curated to elevate your experience to new heights.”</h6>
+  </div>
+</div>
+<div class="row row-cols-1 row-cols-md-3 g-4 d-flex justify-content-center">
+  {{#each packages}}
+    <div class="col">
+      <div class="card h-100">
+        <img src="{{this.fotourl}}" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <div class="jeephead">
+            <h5 class="card-title">VIA</h5>
+            <h3 class="card-title">{{this.via}}</h3>
+            <span>RP.{{this.harga}}/Jeep</span>
+            <h4 class>RUTE</h4>
+            <hr />
+          </div>
+          <ul class="card-text">
+            <li>
+              {{#each rute}}
+                <i class="fa-solid fa-circle-check">
+                  {{this}}
+                </i>
+              {{/each}}
+            </li>
+          </ul>
+        </div>
+        <div class="btn-center text-center">
+          <small class="text-body-secondary" data-id="{{this.id}}"><a href="/login" class="btn">BOOK NOW!</a></small>
+        </div>
+      </div>
+    </div>
+  {{/each}}
+</div>

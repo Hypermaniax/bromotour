@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Required meta tags End -->
+
+    <!-- Bootstrap CSS Start -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <!-- Bootstrap CSS  End -->
+
+    <!-- Owl Carousel Start  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Owl carousel end -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- style Start -->
+    <link rel="stylesheet" href="/css/style.css">
+    <!-- Style End -->
+
+    <!-- Google Font Start -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Road+Rage&display=swap"
+        rel="stylesheet">
+    <!-- Google Fonts End -->
+
+
+    <!-- Title Logo Start -->
+    <title>Bromount</title>
+    <link rel="icon" href="/images/3.png" type="images/x-icon">
+    <!-- Title Logo End -->
+</head>
+
+<body>
+    <div class="warning" id='warning'>
+        <div class="container d-flex justify-content-center mt-5">
+            <div class="card">
+                <div class="card-body" style="text-align: center;">
+                    <div class="logo">
+                        <img src="/images/logo2.png" alt="" height="35">
+                    </div>
+                    <div class="warning-card" style="font-size: 20px;">
+                        <span>are you sure want delete ?</span>
+                    </div>
+                    <div class="input d-flex">
+                        <button type="submit"
+                            onclick="document.getElementById('warning').style.display='none'">Yes</button>
+                        <button type="button"
+                            onclick="document.getElementById('warning').style.display='none'">No</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="Choose" id='Choose'onclick="document.getElementById('Choose').style.display='none'">
+        <div class="container d-flex justify-content-center mt-5" >
+            <div class="card">
+                <div class="card-body" style="text-align: center;">
+                    <div class="logo">
+                        <img src="/images/logo2.png" alt="" height="35">
+                    </div>
+                    <div class="choose" style="font-size: 20px;">
+                        <span>what will you add?</span>
+                    </div>
+                    <div class="input d-flex">
+                        <button type="submit"
+                            onclick="document.getElementById('add-admin-master').style.display='block'">Admin Master</button>
+                        <button type="button"
+                            onclick="document.getElementById('add-admin-via' ).style.display='block'">Admin Via</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="add-admin-via" id="add-admin-via">
+        <div class="container d-flex justify-content-center mt-5">
+            <div class="card">
+                <div class="card-header d-flex justify-content-between"
+                    style="background-color: #fff; border-bottom: none;">
+                    <div class="logo">
+                        <img src="/images/logo2.png" alt="" height="35">
+                    </div>
+                    <div class="right">
+                        <span onclick="document.getElementById('add-admin-via').style.display='none'" class="close"
+                            title="Close">&times;</span>
+                    </div>
+                    <br>
+                </div>
+                <hr>
+                <form action="/dashboard/master/add-via" method="post" class="form-via">
+                    <div class="card-body">
+                        <form action="" style="font-weight: bolder;">
+                            <h3 style="text-align: center;font-weight:bolder">Admin Via</h3>
+                            <div class="mb-1">
+                                <label class="form-label">Username</label>
+                                <input required type="text" name="usernameRegister" id="username-register"
+                                    placeholder="Username" class="form-control">
+                            </div>
+                            <div class="mb-1">
+                                <label class="form-label">Email</label>
+                                <input required type="email" name="emailRegister" id="email-register"
+                                    placeholder="Email" class="form-control">
+                            </div>
+                            <div class="mb-1">
+                                <label class="form-label">Password</label>
+                                <input required type="password" name="passwordRegister" id="password-register"
+                                    placeholder="Password" class="form-control">
+                            </div>
+                            <div class="select-box-admin text-center mt-3">
+                                <div class="mb-1 d-flex justify-content-between border p-1 mt-4" id="admin-via">
+                                    <div class="label" style="flex: 1;text-align: center;">
+                                        <label for="form-label text">Via</label>
+                                    </div>
+                                    <div class="selection" style="flex: 1;">
+                                        <select name="cars" class="select" style="border: none;">
+                                            <option value="Malang">Malang</option>
+                                            <option value="Pasuruan">Pasuruan</option>
+                                            <option value="Probolinggo">Probolinggo</option>
+                                            <option value="Lumajang">Lumajang</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mt-4" style="display:flex; justify-content: center;">
+                                <button type="submit">
+                                    Add
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="add-admin-master" id="add-admin-master">
+        <div class="container d-flex justify-content-center mt-5">
+            <div class="card">
+                <div class="card-header d-flex justify-content-between"
+                    style="background-color: #fff; border-bottom: none;">
+                    <div class="logo">
+                        <img src="/images/logo2.png" alt="" height="35">
+                    </div>
+                    <div class="right">
+                        <span onclick="document.getElementById('add-admin-master').style.display='none'" class="close"
+                            title="Close">&times;</span>
+                    </div>
+                    <br>
+                </div>
+                <hr>
+                <form action="/dashboard/master/add-master" method="post" class="form-via">
+                    <div class="card-body">
+                        <form action="" style="font-weight: bolder;">
+                            <h3 style="text-align: center;font-weight:bolder">Admin master</h3>
+                            <div class="mb-1">
+                                <label class="form-label">Username</label>
+                                <input required type="text" name="usernameRegister" id="username-register"
+                                    placeholder="Username" class="form-control">
+                            </div>
+                            <div class="mb-1">
+                                <label class="form-label">Email</label>
+                                <input required type="email" name="emailRegister" id="email-register"
+                                    placeholder="Email" class="form-control">
+                            </div>
+                            <div class="mb-1">
+                                <label class="form-label">Password</label>
+                                <input required type="password" name="passwordRegister" id="password-register"
+                                    placeholder="Password" class="form-control">
+                            </div>
+                            <div class="mt-4" style="display:flex; justify-content: center;">
+                                <button type="submit">
+                                    Add
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="header-admin">
+        <nav class="navbar navbar-expand-lg navbar-light justify-content-center fs-6 p-2"
+            style="  align-items: center;">
+            <div class="container-fluid">
+                <div class="logo d-flex align-items-center text-start">
+                    <a class="navbar-brand " href="#">
+                        <img src="/images/Group 16.png" alt="" height="50px">
+                    </a>
+                    <div class="word">
+                        <span>
+                            Welcome, {{username}}
+                        </span>
+                        <div class="div">
+                            <span>Master</span>
+                        </div>
+                    </div>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse text-center" id="navbarNav">
+                    <div class="kanan ">
+                        <div class="word ">
+                            <div class="logout-admin my-1">
+                                <button class="mx-1" type="button">Change Admin</button>
+                            </div>
+                            <div class="logout-admin">
+                                <form action="/dashboard/logout" method="POST">
+                                    <button class="mx-1" type="button">Logout</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    {{>table}}
+
+    <!-- Bootstrap js  Start -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <!-- Boostrap js End -->
+
+    <script src="/js/main.js"></script>
+</body>
+
+</html>
